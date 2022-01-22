@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "icon" href = "https://i.pinimg.com/originals/b9/f3/79/b9f379dc190685c443ac37fdfee6a5dc.png" type = "image/x-icon">
+    <title>checkout</title>
+    <link rel="stylesheet" href="./pstyle/checkout.css" />
+</head>
+<body>
+    <div id="pnavbar">
+        <img src="https://www.logo.wine/a/logo/Snapdeal/Snapdeal-White-Dark-Background-Logo.wine.svg" alt="">
+        <p>100% Payment Protection,Easy Returns Policy</p>
+    </div>
+    <div id="container">
+        <div id="lcontent">
+            <div class="contentdiv">
+                <h3>  1.LOGIN</h3>
+                <p>email id</p></div>  
+            <div id="deldiv"><h3>2.Delivery Address</h3></div>
+            <form id="myform">
+                <div class="a1"><label>Pincode</label>
+                    <input type="number" id="pin" placeholder="6 digit Pincode" value maxlength="6" required></div>
+                <br>
+                <div class="a1"><label>Name</label>
+                    <input type="text" id="name" placeholder="Full Name" required></div>
+                <br>
+                <div class="a1"><label>Address</label>
+                    <textarea id="address" placeholder="Flat/House No. Colony/Street No."></textarea>
+                </div><br>
+                <div class="a1"><label>Locality/Landmark</label>
+                    <input type="text" id="landmark" placeholder="Eg. Near Apollo Hospital" required></div>
+                <br>
+                <div class="a1"><label>City</label>
+                    <input type="text" id="city" placeholder="City" required></div>
+                <br>
+                <div class="a1"><label>State</label>
+                    <input type="text" id="state" placeholder="State" required></div>
+                <br>
+                <div class="a1"><label>Mobile No.</label>
+                 <input type="number" id="mob" placeholder="10 digit mobile number" required></div>
+                <br>
+               <div> <input type="submit" value="SAVE AND CONTINUE" id="btn"></div>
+            </form>
+        </div>
+        <div id="rcontent">
+            <p>SUMMARY<span> (2 items)</span></p>
+            <p>In Your Cart</p>
+            <hr>
+            <div id="lin_cart">
+                <p id="lname" style="margin-left: 30px;"></p>
+                <div style="display: flex;justify-content: space-between;width: 80%;margin: auto;">
+                    <span id="lquntity"></span>
+                    <span id="lprice"></span>
+                </div>
+                <h3 style="color: rgb(231, 0, 135);">Total pay: &nbsp;&nbsp; <span id="ltotal"></span></h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    document.querySelector("#myform").addEventListener("submit",checkout)
+    function checkout(event){
+        event.preventDefault();
+        window.location.href="payment.html"
+    }
+    let data = JSON.parse(localStorage.getItem("cartData"))
+    let {delreturn,description,hoverimg,img,name,price,quantity,rate} = data
+    let total = JSON.parse(localStorage.getItem("bagPrice"))
+    console.log('total:', total)
+    let qunt = JSON.parse(localStorage.getItem("quntity"))
+    console.log('qunt:', qunt)
+    document.getElementById('lname').innerText = name;
+    document.getElementById("lquntity").innerText=`Quntity:${qunt}`
+    document.getElementById("lprice").innerText=`Rs. ${total}`
+    document.getElementById("ltotal").innerText=`Rs. ${total}`
+</script>

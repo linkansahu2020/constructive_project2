@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "icon" href = "https://i.pinimg.com/originals/b9/f3/79/b9f379dc190685c443ac37fdfee6a5dc.png" type = "image/x-icon">
+    <title>payment</title>
+    <link rel="stylesheet" href="./pstyle/payment.css" />
+</head>
+<body>
+    <div id="pnavbar">
+        <img src="https://www.logo.wine/a/logo/Snapdeal/Snapdeal-White-Dark-Background-Logo.wine.svg" alt="">
+        <p>100% Payment Protection,Easy Returns Policy</p>
+    </div>
+    <div id="container">
+        <div id="lcontent">
+            <div class="contentdiv">
+                <h3>  1.LOGIN</h3></div>
+            <div class="contentdiv"><h3>2.Delivery Address</h3></div>
+           <div class="contentdiv"><h3>3.Review Order</h3></div>
+           <div id="deldiv"><h3>4.Make Payment</h3></div>
+           <div id="payment">
+               <div id="cardtype">
+                   <ul>
+                       <li id="creditcard">Credit card</li>
+                       <li>Debit Card</li>
+                       <li>Net Banking</li>
+                       <li>Cash On Delivery</li>
+                       <li>EMI</li>
+                       <li>e-Gift Voucher</li>
+                       <li>UPI</li>
+                   </ul>
+               </div>
+               <div id="carddetail">
+                   <div><h1>1. bank Offer</h1>
+                </div>
+                   <div id="bank">
+                       <div class="bimg">
+                           <p>10% Instant Discount</p>
+                           <p>using axis bank credit and debit card</p>
+                       </div>
+                       <div class="bimg">
+                        <p>10% Instant Discount</p>
+                        <p>using AU small finace bank credit card</p></div>
+                       <div class="bimg">
+                        <p>10% Instant Discount</p>
+                        <p>using Dhani one freedom card</p>
+                       </div>
+                   </div>
+                   <div id="h4"><h2>Pay using credit cards</h2></div>
+                   <form id="myform">
+                       <div>
+                           <lable>Card Number</lable>
+                        <input type="number" id="card number" placeholder="card number" required>
+                    </div>
+                    <hr>
+                    <div><lable>CVV</lable>
+                        <input type="number" id="cvv" placeholder="3 Digit Cvv" required></div>
+                       <hr>
+                      <div>
+                        <lebel>Expiry Date</lebel>
+                        <input type="date" >
+                      </div>
+                      <hr>
+                      <input type="Submit" value="Pay" id="btn"> 
+                   </form>
+               </div>
+           </div>
+        </div>
+        <div id="rcontent">
+            <p>SUMMARY<span> (2 items)</span></p>
+            <p>In Your Cart</p>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    document.querySelector("#myform").addEventListener("submit", checkout);
+  
+    function checkout(event) {
+      event.preventDefault();
+      window.location.href = "otp.html";
+      window.alert("OTP Sent to your Mobile Number");
+    }
+  </script>
+  

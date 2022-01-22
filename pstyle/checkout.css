@@ -1,0 +1,88 @@
+#pnavbar{
+    display: flex;
+    background-color: #e40046;
+    color: white;
+    height: 100px;
+    width: 100%;
+    justify-content: space-between;
+}
+img{
+    height: 76%;
+    margin-left: 100px;
+    margin-bottom: auto;
+}
+p{
+    padding: 10px;
+}
+#container{
+    display: flex;
+    width: 90%;
+    height: 1000px;
+    border: 1px solid grey;
+    margin: auto;
+    margin-top: -25px;
+    background-color: white;
+    margin-bottom: 30px;
+}
+#lcontent{
+    padding: 5%;
+    width: 70%;
+}
+#rcontent{
+    border: 1px solid grey;
+    width: 28%;
+    background-color: #f9fafb;
+}
+#btn{
+    color: white;
+    background-color: #e40046;
+    padding: 12px;
+    margin-left: 225px;
+    width: 250px;
+    font-weight: bold;
+}
+#add{
+    height: 75px;
+    width: 200px;
+}
+label{
+    margin-right: 10%;
+}
+.contentdiv{
+    border: 1px solid grey;
+    background-color: #f9fafb;
+    margin-bottom: 5px;
+    display: flex;
+  
+}
+#deldiv{
+    border: 1px solid black; 
+    background-color: black;
+    color: white;
+}
+h3{
+    margin-left: 30px;
+}
+.a1{
+  display: flex;
+  justify-content:space-between;
+}
+input{
+    padding: 8px;
+}
+body{
+    margin: 0px;
+    background-color:#eeeeee;
+}
+form{
+    border: 1px solid grey;
+    padding: 80px;
+    height: 600px;
+}
+textarea{
+    padding: 8px;
+}
+p{
+    padding: 10px;
+    margin-left: 150px;
+}

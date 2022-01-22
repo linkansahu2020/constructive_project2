@@ -1,0 +1,152 @@
+#pnavbar{
+    display: flex;
+    background-color: #e40046;
+    color: white;
+    height: 100px;
+    width: 100%;
+    justify-content: space-between;
+}
+img{
+    height: 75%;
+    margin-left: 100px;
+    margin-bottom: auto;
+}
+p{
+    padding: 10px;
+}
+#container{
+    display: flex;
+    width: 90%;
+    height: 1000px;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: -25px;
+    background-color: white;
+}
+#lcontent{
+    margin-left: 5%;
+    width: 70%;
+}
+#rcontent{
+    border: 1px solid teal;
+    width: 28%;
+    background-color:#eeeeee;
+}
+#btn{
+    color: white;
+    background-color: #e40046;
+    padding: 10px;
+    margin-left: 250px;
+}
+#add{
+    height: 75px;
+    width: 200px;
+}
+label{
+    margin-right: 10%;
+    font-weight: 700;
+}
+.contentdiv{
+    border: 1px solid black;
+    margin: 2px;
+    background-color: #f9fafb;
+    margin-bottom: 20px;
+}
+#deldiv{
+    border: 1px solid black; 
+    margin-bottom: 20px;
+    background-color: black;
+    color: white;
+}
+h3{
+    margin-left: 30px;
+}
+.a1{
+  display: flex;
+  justify-content:space-between;
+}
+input{
+    padding: 8px;
+}
+body{
+    margin: 0px;
+    background-color:#eeeeee;
+}
+#cardtype{
+    width: 30%;
+   
+    height: 500px;
+}
+ul{
+    list-style-type: none;
+    margin-left: none
+    
+}
+li{
+    padding: 13px;
+    font-weight: 600;
+    color:teal;
+    cursor: pointer;
+    border: 1px solid black;
+   margin: auto;
+    
+}
+li:hover{
+   color: black;
+}
+#payment{
+    display: flex;
+}
+#carddetail{
+    border: 1px solid black;
+    margin-left: 20px;
+    width: 70%;
+  
+}
+#bank{
+    display:flex;
+    width: 100%;
+    height: 150px;
+    border: 1px solid teal;
+    margin-top: 40px;
+}
+    .bimg{
+     border: 1px solid black; 
+     margin-right: 2%;
+     width: 30%; 
+     text-align: center;
+     background-color: #017e81;
+     color: white; 
+     margin: auto;
+    }
+    #h4{
+        width: 100%;
+        height: 50px;
+        padding-block-end: 10px;
+        border: 1px solid black;
+    }
+    form{
+        padding: 2%;
+      
+    }
+    #btn{
+    color: white;
+    background-color: #e40046;
+    padding: 12px;
+    margin-left: 200px;
+    width: 200px;
+    font-weight: bold;
+}
+input{
+    padding: 10px;
+    margin-left: 25px;
+}
+h2{
+    color:teal;
+    padding: 2px;
+    margin-left: 10px;
+}
+h1{
+    color:teal;
+    margin-left: 10px;   
+}
